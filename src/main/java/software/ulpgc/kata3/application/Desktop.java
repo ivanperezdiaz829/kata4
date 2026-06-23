@@ -13,9 +13,9 @@ import java.awt.*;
 public class Desktop extends JFrame {
 
     private Desktop() {
-        this.setTitle("Kata 4");
+        this.setTitle("Histogram");
         this.setResizable(false);
-        this.setSize(1200, 1000);
+        this.setSize(800, 600);
         this.setLocationRelativeTo(null);
     }
 
@@ -36,7 +36,7 @@ public class Desktop extends JFrame {
         return ChartFactory.createHistogram(
                 histogram.title(),
                 histogram.xAxis(),
-                histogram.yAxis(),
+                histogram.xAxis(),
                 datasetWith(histogram)
         );
     }

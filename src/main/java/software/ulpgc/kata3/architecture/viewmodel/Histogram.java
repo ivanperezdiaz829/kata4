@@ -6,8 +6,8 @@ import java.util.Map;
 
 public class Histogram implements Iterable<Integer> {
 
-    private final Map<Integer, Integer> map;
     private final Map<String, String> labels;
+    private final Map<Integer, Integer> map;
 
     public Histogram(Map<String, String> labels) {
         this.labels = labels;
@@ -31,7 +31,7 @@ public class Histogram implements Iterable<Integer> {
     }
 
     public String title() {
-        return labels.getOrDefault("title", "");
+        return labels.getOrDefault("Title", "");
     }
 
     public String xAxis() {
